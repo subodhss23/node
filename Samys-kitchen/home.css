@@ -1,0 +1,13 @@
+.header{
+  font-family: 'Barriecito', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
+.navbar-brand{
+  color: pink;
+}
+
+.burger{
+  height: 50%;
+}
