@@ -4,19 +4,24 @@ const PORT = 3000;
 
 const server = http.createServer(function(req, res){
   if (req.url === '/'){
-    res.writeHead(200, {'content-type':'text/html'});
-    const homePage = fs.readFileSync('home.html');
-    res.write(homePage);
-    res.end();
+        res.writeHead(200, {'content-type':'text/html'});
+        const homePage = fs.readFileSync('home.html');
+        res.write(homePage);
+        res.end();
   } else if (req.url === '/home.css') {
-    res.writehead(200, {'content-type': 'text/css'});
-    const homeStyle = fs.readFileSync('home.css');
-    res.write(homeStyle);
-    res.end();
+        res.writeHead(200, {'content-type': 'text/css'});
+        const homeStyle = fs.readFileSync('home.css');
+        res.write(homeStyle);
+        res.end();
+  }else if (req.url === '/burger.jpg'){
+        res.writeHead(200, {'content-type': 'image/jpg'});
+        const burgerJpg = fs.readFileSync('burger.jpg');
+        res.write(burgerJpg);
+        res.end();
   } else {
-    res.writeHead(404, {'content-type': 'text/html'});
-    res.write('<h1>Page not found, 404!!!</h1>');
-    res.end();
+        res.writeHead(404, {'content-type': 'text/html'});
+        res.write('<h1>Page not found, 404!!!</h1>');
+        res.end();
   }
 })
 
