@@ -1,0 +1,19 @@
+.container{
+  padding-top: 50px;
+}
+
+.heading{
+  color:brown;
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+  font-size: 50px;
+}
+
+img{
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  min-height: 50%;
+  max-height: 30%;
+  max-width: 100%;
+}
